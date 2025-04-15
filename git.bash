@@ -174,24 +174,34 @@ git merge r19branch
 # </code>
 # </pre>
 
+git checkout --theirs .
+
 # Тут добавляем с коммита
+cp ../commit25/* .
+git add . && git commit -m "r25"
 
-# git add . && git commit -m "r25"
+git checkout r9branch
+cp ../commit26/* .
 
-# git checkout r9branch
-# git add . && git commit -m "r26"
+git add . && git commit -m "r26"
 
-# git checkout branch1
-# git add . && git commit -m "r27"
+git checkout branch1
+cp ../commit27/* .
 
-# git checkout r9branch
-# git add . && git commit -m "r28"
+git add . && git commit -m "r27"
 
-# git checkout branch1
-# git add . && git commit -m "r29"
+git checkout r9branch
+cp ../commit28/* .
 
-# git checkout r7branch
-# git merge branch1
+git add . && git commit -m "r28"
+
+git checkout branch1
+cp ../commit29/* .
+
+git add . && git commit -m "r29"
+
+git checkout r7branch
+git merge branch1
 
 # <<<<< HEAD
 # ...
@@ -203,79 +213,122 @@ git merge r19branch
 # previous : 21
 # previous : 29
 
-# git add . && git commit -m "r30"
+git checkout --theirs .
 
-# git checkout r4branch
-# git add . && git commit -m "r31"
+cp ../commit30/* .
 
-# git config user.name romboooo
+git add . && git commit -m "r30"
 
-# git checkout r5branch
-# git add . && git commit -m "r32"
+git checkout r4branch
+cp ../commit31/* .
 
-# git config user.name huji
+git add . && git commit -m "r31"
 
-# git checkout r7branch
-# git add . && git commit -m "r33"
+git config user.name romboooo
 
-# git checkout r9branch
-# git add . && git commit -m "r34"
+git checkout r5branch
+cp ../commit32/* .
 
-# git config user.name romboooo
+git add . && git commit -m "r32"
 
-# git checkout r5branch
-# git add . && git commit -m "r35"
+git config user.name huji
 
-# git config user.name huji
+git checkout r7branch
+cp ../commit33/* .
 
-# git checkout r7branch
-# git add . && git commit -m "r36"
+git add . && git commit -m "r33"
 
-# git config user.name romboooo
+git checkout r9branch
+cp ../commit34/* .
 
-# git checkout r22branch
-# git add . && git commit -m "r37"
+git add . && git commit -m "r34"
 
-# git checkout r5branch
-# git add . && git commit -m "r38"
+git config user.name romboooo
+
+git checkout r5branch
+cp ../commit35/* .
+
+git add . && git commit -m "r35"
+
+git config user.name huji
+
+git checkout r7branch
+cp ../commit36/* .
+
+git add . && git commit -m "r36"
+
+git config user.name romboooo
+
+git checkout -b r22branch
+cp ../commit37/* .
+
+git add . && git commit -m "r37"
+
+git checkout r5branch
+cp ../commit38/* .
+
+git add . && git commit -m "r38"
 
 
-# git checkout r4branch
-# git merge r5
-# git add . && git commit -m "r38-merge"
+git checkout r4branch
+git merge r5
+git checkout --theirs .
 
-# git config user.name huji
 
-# git checkout r4branch
-# git add . && git commit -m "r39"
+git add . && git commit -m "r38-merge"
 
-# git checkout r9branch
-# git merge r4branch
-# git add . && git commit -m "r40"
+git config user.name huji
 
-# git checkout main
-# git add . && git commit -m "r41"
+git checkout r4branch
+cp ../commit39/* .
 
-# git checkout r9branch
-# git add . && git commit -m "r42"
+git add . && git commit -m "r39"
 
-# git checkout r7branch
-# git merge r9branch
-# git add . && git commit -m "r43"
+git checkout r9branch
+git merge r4branch
+git checkout --theirs .
+cp ../commit40/* .
 
-# git checkout r22branch
-# git merge r7branch
-# git add . && git commit -m "r43-merge"
+git add . && git commit -m "r40"
 
-# git config user.name romboooo
+git checkout main
+cp ../commit41/* .
 
-# git checkout r22branch
-# git add . && git commit -m "r44"
+git add . && git commit -m "r41"
 
-# git checkout main
-# git merge r22branch
-# git add . && git commit -m "r44-merge"
+git checkout r9branch
+cp ../commit42/* .
 
-# git config user.name huji
-# git checkout main
-# git add . && git commit -m "r45"
+git add . && git commit -m "r42"
+
+git checkout r7branch
+git merge r9branch
+git checkout --theirs .
+
+cp ../commit43/* .
+
+git add . && git commit -m "r43"
+
+git checkout r22branch
+git merge r7branch
+git checkout --theirs .
+
+git add . && git commit -m "r43-merge"
+
+git config user.name romboooo
+
+git checkout r22branch
+cp ../commit44/* .
+
+git add . && git commit -m "r44"
+
+git checkout main
+git merge r22branch
+git checkout --theirs .
+
+git add . && git commit -m "r44-merge"
+
+git config user.name huji
+git checkout main
+cp ../commit45/* .
+git add . && git commit -m "r45"
