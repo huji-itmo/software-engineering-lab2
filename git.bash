@@ -15,7 +15,7 @@ git commit -m "r0"
 # Второй коммит r1
 cp ../commit1/* .
 
-git checkout -b branch1
+git checkout -b branch1 
 git add .
 git commit -m "r1"
 
